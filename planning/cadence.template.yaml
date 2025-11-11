@@ -1,0 +1,9 @@
+frequency: weekly
+day_of_week: Mon
+variants:
+  titles_per_topic: 6
+  short_drafts_per_topic: 3
+content_plan:
+  web_article: 2
+  youtube_script: 1
+  linkedin_post: 1

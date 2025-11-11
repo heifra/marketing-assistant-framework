@@ -1,0 +1,4 @@
+entities:
+  - term: <Begriff>
+    synonyms: [<Synonym1>,<Synonym2>]
+    forbidden: [<Verbotene Phrase>]

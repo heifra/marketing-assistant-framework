@@ -1,0 +1,10 @@
+id: landing_v1
+stages:
+  - id: structure
+    prompt: agents/core/prompts/plan_prompt.md
+    inputs: [brief]
+    outputs: [sections]
+  - id: copy
+    prompt: agents/core/prompts/draft_prompt.md
+    inputs: [sections]
+    outputs: [landing.md, hero_copy.md]

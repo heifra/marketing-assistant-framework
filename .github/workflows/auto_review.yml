@@ -1,0 +1,10 @@
+name: auto_review
+on:
+  push:
+    paths: ["planning/variants/*.md"]
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/agent_run.py review

@@ -1,0 +1,9 @@
+include:
+  - pattern: "https://example.com/blog/*"
+  - pattern: "https://news.example.com/*"
+exclude:
+  - pattern: "?utm=*"
+  - pattern: "*/promo/*"
+main_selector: article
+title_selector: h1
+slug_from: title

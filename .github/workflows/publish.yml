@@ -1,0 +1,16 @@
+name: publish
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  move_on_merge:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python scripts/move_final.py
+          git config user.name bot && git config user.email bot@local
+          git add content/approved || true
+          git commit -m "publish: finalize" || true
+          git push || true

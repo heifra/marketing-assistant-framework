@@ -1,0 +1,15 @@
+id: youtube_script_v1
+stages:
+  - id: outline
+    prompt: agents/core/prompts/plan_prompt.md
+    inputs: [brief]
+    outputs: [outline]
+  - id: script
+    prompt: agents/core/prompts/draft_prompt.md
+    inputs: [outline]
+    outputs: [script.md, beats.json]
+publishing:
+  target: github
+  paths:
+    draft: content/drafts/${BRAND_PLACEHOLDER}/youtube/{slug}.md
+    final: content/approved/${BRAND_PLACEHOLDER}/youtube/{date}-{slug}.md

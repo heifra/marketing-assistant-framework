@@ -1,0 +1,5 @@
+- [ ] Fakten geprüft
+- [ ] Voice & Style eingehalten
+- [ ] SEO erfüllt
+- [ ] Compliance ok
+- [ ] Interne Links platziert

@@ -1,0 +1,22 @@
+tools:
+  - id: web_search
+    provider: ${WEBSEARCH_MCP}
+    caps: ["query","topn:10"]
+  - id: snapshot_lookup
+    provider: local-kv
+    path: "cache/kv.json"
+  - id: chrome_fetch
+    provider: mcp-chrome-devtools
+  - id: readability_score
+    provider: textstat
+  - id: citation_builder
+    provider: citeproc
+  - id: image_prompt
+    provider: imgprompt
+  # optional:
+  - id: embed_search
+    provider: local-emb
+    path: "cache/embeddings/"
+  - id: image_generate
+    provider: imggen-mcp
+    caps: ["text2image","variations"]

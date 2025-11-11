@@ -1,0 +1,13 @@
+clusters:
+  - name: core-offerings
+    priority: high
+    topics:
+      - id: t1
+        label: <Topic Label>
+        keywords: [<kw1>,<kw2>]
+  - name: expansion
+    priority: medium
+    topics:
+      - id: t2
+        label: <Topic Label>
+        keywords: [<kw3>,<kw4>]

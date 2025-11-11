@@ -1,0 +1,23 @@
+name: quickstart
+on:
+  workflow_dispatch:
+    inputs:
+      type:     { description: "linkedin_post|web_article|youtube_script", required: true }
+      topic:    { description: "Thema 1 Satz", required: true }
+      audience: { description: "Zielperson(a)", required: true }
+      voice:    { description: "3 Adjektive", required: true }
+      promise:  { description: "Kernversprechen", required: true }
+      source:   { description: "Optionale URL", required: false }
+jobs:
+  gen_quickstart:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python scripts/agent_run.py quickstart \
+            --type "${{ github.event.inputs.type }}" \
+            --topic "${{ github.event.inputs.topic }}" \
+            --audience "${{ github.event.inputs.audience }}" \
+            --voice "${{ github.event.inputs.voice }}" \
+            --promise "${{ github.event.inputs.promise }}" \
+            --source "${{ github.event.inputs.source }}"

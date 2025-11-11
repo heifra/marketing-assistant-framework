@@ -1,0 +1,3 @@
+- Starte mit Hook, Nutzenversprechen, strukturierte Abschnitte, Beispiele, klarer CTA und interne Links.
+- Schreibe aktiv und präzise, verzichte auf Übertreibungen oder unbelegte Superlative.
+- Achte auf vollständige Frontmatter mit title, slug, meta und tags.

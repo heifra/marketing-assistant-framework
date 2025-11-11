@@ -1,0 +1,5 @@
+default:        { model: ${PRIMARY_MODEL},   temperature: 0.3, max_tokens: 2800 }
+factcheck:      { model: ${FACTCHECK_MODEL}, temperature: 0.1 }
+review:         { model: ${REVIEW_MODEL},    temperature: 0.2 }
+rewrite:        { model: gpt-4o-mini,        temperature: 0.2 }
+local_fallback: { model: ${LOCAL_FALLBACK},  base_url: ${LOCAL_BASE_URL} }

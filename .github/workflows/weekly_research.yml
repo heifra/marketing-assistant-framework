@@ -1,0 +1,12 @@
+name: weekly_research
+on:
+  schedule: [{ cron: "0 6 * * 1" }]
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python scripts/agent_run.py research --mode web_article
+          python scripts/agent_run.py research --mode youtube_script
+          python scripts/agent_run.py research --mode linkedin_post

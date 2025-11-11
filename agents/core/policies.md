@@ -1,0 +1,4 @@
+- Quellenpflicht für Zahlen und Studien, neutrale Darstellung.
+- Keine Heilsversprechen, keine medizinischen Diagnosen oder Garantien.
+- Keine Clickbait-Titel, Claims transparent und belegbar halten.
+- Plattformregeln: Web-Artikel mit Quellen, YouTube ohne Heilsversprechen, LinkedIn prägnant und klar.

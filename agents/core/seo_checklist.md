@@ -1,0 +1,3 @@
+- Title maximal 60 Zeichen, Meta Description maximal 155 Zeichen.
+- Genau eine H1 verwenden, H2/H3 decken Haupt- und Nebenkeywords ab.
+- Alt-Texte pflegen, mindestens ein interner Link, Slug klar und sprachrein.

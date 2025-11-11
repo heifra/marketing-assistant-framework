@@ -1,0 +1,7 @@
+cms: ${WP_IMPORT}
+fields:
+  title: frontmatter.title
+  slug: frontmatter.slug
+  excerpt: frontmatter.summary
+  content: body
+  tags: frontmatter.tags

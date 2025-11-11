@@ -1,0 +1,16 @@
+{
+  "agent_name": "${BRAND_PLACEHOLDER}-content-agent",
+  "workflows_dir": "agents/core/workflows",
+  "prompts_dir": "agents/core/prompts",
+  "eval_dir": "agents/core/eval",
+  "contexts_dir": "agents/brand",
+  "llm_config": "agents/core/llm_backends.yaml",
+  "tools_config": "agents/core/tools.mcp.yaml",
+  "memory_doc": "agents/core/memory_schema.md",
+  "policies": "agents/core/policies.md",
+  "checklists": [
+    "agents/core/writing_checklist.md",
+    "agents/core/seo_checklist.md",
+    "agents/core/eval_rubrics.md"
+  ]
+}

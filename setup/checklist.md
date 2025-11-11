@@ -1,0 +1,6 @@
+- [ ] Brand/Style definiert
+- [ ] Policies ergänzt
+- [ ] Knowledge initialisiert
+- [ ] LLM/MCP Platzhalter gesetzt
+- [ ] Letta Agent File erzeugt
+- [ ] Import in Letta bestätigt

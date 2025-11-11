@@ -1,0 +1,35 @@
+id: blog_v1
+stages:
+  - id: gather_context
+    tools: [snapshot_lookup]
+    fallback_tools: [chrome_fetch]
+    outputs: [context.md]
+  - id: ideation
+    prompt: agents/core/prompts/plan_prompt.md
+    inputs: [brief, topic_map, entity_glossary, context.md]
+    outputs: [title_options, outline, key_claims]
+    tools: [web_search]
+    guards: [e_e_a_t_gate]
+  - id: drafting
+    prompt: agents/core/prompts/draft_prompt.md
+    inputs: [outline, key_claims]
+    outputs: [draft_v1.md]
+  - id: refinement
+    prompt: agents/core/prompts/refine_prompt.md
+    inputs: [draft_v1.md, agents/core/seo_checklist.md, agents/core/writing_checklist.md]
+    outputs: [draft_v2.md, seo_meta.json]
+    tools: [readability_score]
+  - id: factcheck
+    prompt: agents/core/prompts/factcheck_prompt.md
+    inputs: [draft_v2.md]
+    outputs: [draft_v3.md, citations.md]
+    tools: [web_search, citation_builder]
+  - id: finalize
+    prompt: agents/core/prompts/meta_prompt.md
+    inputs: [draft_v3.md]
+    outputs: [post.md, post.frontmatter.yaml, images.prompts.yaml]
+publishing:
+  target: github
+  paths:
+    draft: content/drafts/${BRAND_PLACEHOLDER}/blog/{slug}.md
+    final: content/approved/${BRAND_PLACEHOLDER}/blog/{date}-{slug}.md

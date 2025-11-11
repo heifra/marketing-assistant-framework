@@ -1,0 +1,5 @@
+- Faktenlage: Grade A–C akzeptiert, Abweichungen dokumentieren.
+- Lesbarkeit: Flesch 50–70 anstreben, klarer Satzbau.
+- Markenfit: 100 % Werttreue zu ${BRAND_PLACEHOLDER}.
+- SEO: Checklistenpunkte erfüllt, Keywords korrekt eingebunden.
+- Gate: Gesamtscore mindestens 18 von 25.

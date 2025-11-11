@@ -1,0 +1,18 @@
+name: topic_init
+on:
+  workflow_dispatch:
+    inputs:
+      type: { description: "web_article|youtube_script|linkedin_post", required: true }
+      brief: { description: "Kurzbriefing", required: true }
+      url: { description: "Optionale Quelle", required: false }
+      keywords: { description: "Komma-getrennt", required: false }
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p planning/topics
+          python scripts/agent_run.py topic_init --type "${{ github.event.inputs.type }}" \
+            --brief "${{ github.event.inputs.brief }}" --url "${{ github.event.inputs.url }}" \
+            --keywords "${{ github.event.inputs.keywords }}"

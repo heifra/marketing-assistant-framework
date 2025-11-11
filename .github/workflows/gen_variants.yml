@@ -1,0 +1,10 @@
+name: gen_variants
+on:
+  push:
+    paths: ["planning/topics/*.md"]
+jobs:
+  variants:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/agent_run.py variants

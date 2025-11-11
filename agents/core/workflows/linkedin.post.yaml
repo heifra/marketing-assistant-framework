@@ -1,0 +1,15 @@
+id: linkedin_post_v1
+stages:
+  - id: plan
+    prompt: agents/core/prompts/plan_prompt.md
+    inputs: [brief]
+    outputs: [title_options]
+  - id: draft
+    prompt: agents/core/prompts/draft_prompt.md
+    inputs: [title_options]
+    outputs: [post.md]
+publishing:
+  target: github
+  paths:
+    draft: content/drafts/${BRAND_PLACEHOLDER}/social/{slug}.md
+    final: content/approved/${BRAND_PLACEHOLDER}/social/{date}-{slug}.md

@@ -1,0 +1,13 @@
+name: selection_to_final
+on:
+  push:
+    paths: ["planning/variants/*.md","planning/selected/*.md"]
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python scripts/parse_checkboxes.py planning/variants --require-review planning/reviews
+          python scripts/agent_run.py finalize
+          python scripts/open_prs.py content/drafts planning/templates/review_checklist.md
