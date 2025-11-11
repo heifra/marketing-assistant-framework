@@ -1,13 +1,29 @@
 clusters:
-  - name: core-offerings
+  - name: modern-it-core
     priority: high
+    owner: solutions
     topics:
-      - id: t1
-        label: <Topic Label>
-        keywords: [<kw1>,<kw2>]
-  - name: expansion
+      - id: core-ops-1
+        label: „Service Desk Automation“
+        persona: IT-Leitung
+        keywords: [it-operations, ai-routing, sme-service-level]
+        hero_metric: "MTTR -20%"
+        proof_assets: [case_study_mfg, webinar_ops]
+  - name: data-ai
+    priority: high
+    owner: data_practice
+    topics:
+      - id: data-ai-1
+        label: „RAG für technische Dokumentation“
+        persona: Knowledge Lead
+        keywords: [rag, vector-search, confluence, german-language]
+        compliance: [dsgvo, iso27001]
+  - name: expansion-plays
     priority: medium
+    owner: growth
     topics:
-      - id: t2
-        label: <Topic Label>
-        keywords: [<kw3>,<kw4>]
+      - id: cx-automation
+        label: „AI-Assisted Customer Onboarding“
+        persona: COO
+        keywords: [workflow, onboarding, kafka, bot]
+        experiment: "Beta mit 3 Pilotkunden"

@@ -1,4 +1,14 @@
 entities:
-  - term: <Begriff>
-    synonyms: [<Synonym1>,<Synonym2>]
-    forbidden: [<Verbotene Phrase>]
+  - term: RAG
+    definition: Retrieval-Augmented Generation zur Nutzung interner Wissensbasen.
+    synonyms: [retrieval augmented generation, kontextuelle ki]
+    forbidden: [magische-ki, chatbot-ersatz]
+    usage_notes: Nur erwähnen, wenn Datenquellen + Governance beschrieben werden.
+  - term: SME
+    definition: Small and Medium-sized Enterprises (50–5000 Mitarbeitende).
+    synonyms: [mittelstand, midmarket]
+    forbidden: [konzern, startup]  # nur wenn wirklich zutreffend
+  - term: Service Blueprint
+    definition: Visualisierung der End-to-End-Prozesse inkl. Systeme.
+    synonyms: [prozesskarte, operating model]
+    forbidden: []

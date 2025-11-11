@@ -1,5 +1,7 @@
-- [ ] Fakten geprüft
-- [ ] Voice & Style eingehalten
-- [ ] SEO erfüllt
-- [ ] Compliance ok
-- [ ] Interne Links platziert
+- [ ] Fakten geprüft (Quelle + Domainklasse dokumentiert)
+- [ ] Voice & Style (pragmatisch, beratend, SME-Fokus)
+- [ ] SEO erfüllt (Title ≤60, Meta ≤155, klare H-Struktur)
+- [ ] Technische Präzision (Architektur, Integrationen korrekt)
+- [ ] Compliance & Risikohinweise (DSGVO, Security, Change)
+- [ ] Interne Links / Next Best Content empfohlen
+- [ ] CTA und Hero-Metric eindeutig und messbar
