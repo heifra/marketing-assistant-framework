@@ -23,3 +23,12 @@ Die Struktur ist sofort lauffähig (nur Python-Standardbibliothek). Typische Akt
 - Templates unter `contexts/` und `agents/core/*.template.*` via `scripts/instantiate.py` mit Markenwerten befüllen, Secrets in `infra/secrets.example.env` hinterlegen (nicht committen).
 
 GitHub Actions (.github/workflows/*.yml) können nach dem Hinterlegen der Secrets aktiviert werden, um Topic-Init, Varianten, Reviews, Quickstart, Research oder Publish-Schritte automatisiert auszulösen.
+
+## Pflege-Checkliste
+- [ ] `contexts/brand_profile.template.md` ausfüllen (Mission, Audience, Voice) und instanziieren.
+- [ ] `contexts/voice_guide.template.md` & `contexts/style_guide.template.md` mit Do/Don't-Beispielen ergänzen.
+- [ ] `contexts/topic_map.template.yaml`, `contexts/entity_glossary.template.yaml` und `contexts/facts_knowledge.template.md` mit aktuellen Themen/Fakten pflegen.
+- [ ] `agents/core/policies.md`, `agents/core/writing_checklist.md`, `agents/core/seo_checklist.md` bei Änderungen am Redaktionsleitfaden aktualisieren.
+- [ ] `agents/core/llm_backends.template.yaml` und `agents/core/tools.mcp.template.yaml` mit realen Modellen/Tools versehen (Secrets separat).
+- [ ] `infra/secrets.example.env` in eine lokale `.env` kopieren und API-Keys setzen (nicht committen).
+- [ ] `setup/checklist.md` und `setup/state.json` parallel aktualisieren, sobald die oben genannten Schritte abgeschlossen sind.
